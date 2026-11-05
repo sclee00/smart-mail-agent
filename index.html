@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트 이메일 에이전트</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>📬 Smart Mail Agent</h1>
+            <span id="connection-status" class="status badge-normal">연결 대기중</span>
+        </header>
+
+        <section class="briefing-section">
+            <h2>중요 메일 브리핑</h2>
+            <div id="mail-list" class="mail-list">
+                <div class="mail-card urgent">
+                    <div class="mail-header">
+                        <span class="sender">김철수 팀장</span>
+                        <span class="badge">긴급·중요</span>
+                    </div>
+                    <h3 class="mail-subject">3분기 인공지능 프로젝트 R&D 예산안 검토 요청</h3>
+                    <p class="mail-summary">요약: 다음 주 월요일까지 예산안 수정본 제출 필요. 보안성 검토 항목 추가 요청됨.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="control-section">
+            <div class="command-output">
+                <p id="transcript">마이크 버튼을 누르고 명령을 말씀하세요...</p>
+            </div>
+            <button id="mic-btn" class="mic-button">
+                🎤 음성 명령 시작
+            </button>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
